@@ -1,0 +1,28 @@
+// Place all the styles related to the blog controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+{
+    backgroud-color: #FFC0CB;
+    font-family:  "Times New Roman"; 
+    text-align: center;
+}
+
+.links{
+    border: 5px white;
+    padding : 10px;
+    marging :  3pxx;
+}
+
+img {
+    display: white;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+table{
+    border:3px solid gray;
+}
+td,th{
+    border: 3px solid black;
+}

@@ -1,0 +1,8 @@
+<h1>Blog#new</h1>
+<p>Find me in app/views/blog/new.html.erb</p>
+<%= form_for :@post, url: blog_create_path do |f| %>
+ 아아아 너는 누구십니까? : <%= f.text_field :name %><br>
+ 아아아 말씀의 주제는 뭐죠? : <%= f.text_field :title %><br>
+ 아아아 당신의 애기를 해줘요~ : <%= f.text_area :content %> <br>
+        <%= f.submit %>
+<% end %>

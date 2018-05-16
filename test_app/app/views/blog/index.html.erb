@@ -1,0 +1,37 @@
+<h1>Blog#index</h1>
+<p>Find me in app/views/blog/index.html.erb</p>
+
+<head>
+  <style>
+       @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);)
+  </style>
+</head>
+
+<body>
+  <img src = "Assets/st.jpeg" width="500" height="400"/>
+  <div class= "2018-06-01">
+    <h1>STEROID 10기&11기 PERPORMANCE</h1>
+    <P>성균관대학교 글경이 유일하게 허락한 마약! STEORIOD에서 정기공연을 합니다 </P>
+    <P>When : 2018/06/01/7pm</P>
+    <p>Where : 대학로 에픽 153</p>
+    <a href="https://map.naver.com/local/siteview.nhn?code=35209147">그래서 어디서 하냐국우우우</a>
+</body>
+
+
+
+<%=link_to '아무거나 얘기하기 찹!찹!찹!', blog_new_path%><br><br>
+<table> 
+  <tr>
+      <th>name</th>
+      <th>title</th>
+      <th>content</th>
+  </tr>
+  <% @posts.each do |p| %>
+  <tr>
+      <td><%= p.name%></td>
+      <td><%= p.title%></td>
+      <td><%= p.content%></td>
+  </tr>
+  <%end%>
+</table>
+
